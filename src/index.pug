@@ -6,6 +6,7 @@ html(lang="es")
         meta(viewport="width=device-width, initial-scale=1.0")
         link(href="https://fonts.googleapis.com/css?family=Proxima+Nova", rel="stylesheet", type="text/css")
         link(href="/vendor/pure/pure-min.css", rel="stylesheet")
+        link(href="/vendor/awesomplete/awesomplete.css", rel="stylesheet")
         link(href="/styles/index.css", rel="stylesheet")
 
     body
@@ -16,14 +17,19 @@ html(lang="es")
                 .pure-u-7-24
                     include blocks/search-form
                 .pure-u-1-3
+                    include blocks/link-save
+                    
             aside.filters.pure-u-1-4
+                include blocks/search-list
             content.pure-u-3-4
             footer.pure-u-1
 
         //- third party libraries
         script(src="/vendor/underscore/underscore-min.js")
+        script(src="/vendor/awesomplete/awesomplete.js")
 
         //- app scripts self
         script(src="/scripts/global.js")
         script(src="/scripts/search-form.js")
+        script(src="/scripts/search-list.js")
         script(src="/scripts/app.js")

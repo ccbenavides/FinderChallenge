@@ -1,0 +1,57 @@
+* {
+  font-family: "Proxima Nova";
+}
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 30px;
+  margin-top: 25px;
+}
+.link-save {
+  margin-top: 35px;
+}
+.search-form {
+  margin-top: 30px;
+}
+.search-form-button {
+  border: 1px solid #999;
+  background-color: #ccc;
+  color: #666;
+}
+@media only screen and (max-width: 650px) {
+  .search-form {
+    display: none;
+  }
+}
+.search-list,
+.search-list-ul {
+  list-style: none;
+}
+.search-list-title {
+  text-decoration: none;
+}
+.search-list-li:hover {
+  background-color: #ebecff;
+}
+.search-list-li:hover .search-list-op {
+  visibility: visible;
+}
+.search-list-li:hover .search-list-title {
+  text-decoration: underline;
+}
+.search-list-op {
+  visibility: hidden;
+}
+.search-list-upd,
+.search-list-del {
+  cursor: pointer;
+  font-size: 14px;
+}
+.search-list-upd {
+  margin-right: 3px;
+}
+.search-list-del {
+  margin-left: 3px;
+}

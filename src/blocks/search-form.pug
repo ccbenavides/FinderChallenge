@@ -1,2 +1,5 @@
 .search-form
-    h1 search form
+    form(action="busquedad").search-form-block
+        input(name="dato",id="searchFormText").search-form-text.awesomplete
+        input(type="button",value="Buscar",disabled="true",id="searchFormButton").search-form-button
+        
